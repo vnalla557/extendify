@@ -6,5 +6,13 @@ steps:
   - hello_world
   - --source=.
   - --trigger-http
-  - --runtime=python37
+  - --runtime=python310
   - --allow-unauthenticated
+  - --gen2
+  - --entry-point=hello_world
+  - --egress-settings=all
+  - --ingress-settings=internal-only
+  - --memory=4GB
+  - --timeout=3600s
+  - --min-instances=0
+  - --max-instances=1

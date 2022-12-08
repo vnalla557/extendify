@@ -17,3 +17,4 @@ steps:
   - --min-instances=0
   - --max-instances=1
   - --region=us-central1
+  - --vpc-connector=None
